@@ -35,6 +35,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'tomasr/molokai'
 
 " vim-scripts repos
 NeoBundle 'rails.vim'

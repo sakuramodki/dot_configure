@@ -36,6 +36,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'Shougo/vimfiler'
 
 " vim-scripts repos
 NeoBundle 'rails.vim'

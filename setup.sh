@@ -1,9 +1,13 @@
 #!/bin/bash
 
-if [  ];then
-	git clone http://github.com/gmarik/vundle.git ~/.vim/vundle.git
+if [ ! -e ~/.vim  ] ; then
+	mkdir ~/.vim
 fi
-chsh -s /bin/zsh
+
+if [ ! -e ~/.vim/newbundle.git  ] ; then
+	git clone https://github.com/Shougo/neobundle.vim ~/.vim/newbundle.git
+fi
+
 
 PREFIX=$HOME
 

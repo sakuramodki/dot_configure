@@ -1,13 +1,5 @@
 #!/bin/bash
 
-if [ ! -e ~/.vim  ] ; then
-	mkdir ~/.vim
-fi
-
-if [ ! -e ~/.vim/newbundle.git  ] ; then
-	git clone https://github.com/Shougo/neobundle.vim ~/.vim/newbundle.git
-fi
-
 
 PREFIX=$HOME
 
@@ -27,16 +19,20 @@ function mklink(){
 	fi
 }
 
-
 mklink .zshrc 
 mklink .vimrc 
+
+
+mkdir -p ~/.vim
+if [ ! -e ~/.vim/newbundle.git  ] ; then
+	git clone https://github.com/Shougo/neobundle.vim ~/.vim/newbundle.git
+fi
 
 if [ ! -e ~/.vim/bundle ];then
 	mkdir -p ~/.vim/bundle
 fi
 
 if [ ! -e ~/.vim/bundle/newobundle ];then
-	
 	git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 	
 fi

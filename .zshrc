@@ -215,7 +215,7 @@ case "${OSTYPE}" in
 		;;
 esac
 
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$PATH:/bin/:/sbin/:/usr/sbin/:/usr/bin
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 
 ### Aliases ###
@@ -234,3 +234,10 @@ function ssh_zsh()
 	ssh $* -t zsh
 }
 alias ssh=ssh_zsh
+
+
+
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"

@@ -192,14 +192,6 @@ RPROMPT='$(rprompt-git-current-branch)'
 
 ### Title (user@hostname) ###
 
-case "${TERM}" in
-	kterm*|xterm*|)
-		precmd() {
-			echo -ne "\033]0;${USER}@${HOST%%.*}\007"
-		}
-		;;
-esac
-
 # ------------------------------
 # Other Settings
 # ------------------------------
@@ -215,7 +207,7 @@ case "${OSTYPE}" in
 		;;
 esac
 
-export PATH=$HOME/bin:$PATH:/bin/:/sbin/:/usr/sbin/:/usr/bin
+export PATH=$HOME/bin:$PATH:/bin/:/sbin/:/usr/sbin/:/usr/bin:/usr/local/bin
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 
 ### Aliases ###
@@ -241,3 +233,4 @@ alias ssh=ssh_zsh
 #export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.rbenv/shims:$PATH"

@@ -233,4 +233,8 @@ alias ssh=ssh_zsh
 #export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
+#
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

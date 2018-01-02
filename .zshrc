@@ -225,6 +225,7 @@ export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
 
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 export PATH=$(brew --prefix gnu-sed)/bin:$PATH
+export PATH=~/.pyenv/shims:$PATH
 
 
 #///////////////////////////////////////////////////////////////////////////////////

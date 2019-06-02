@@ -45,7 +45,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'yonchu/accelerated-smooth-scroll'
 
 NeoBundle 'evidens/vim-twig'
-NeoBundle 'soramugi/auto-ctags.vim'
+"NeoBundle 'soramugi/auto-ctags.vim'
 NeoBundle 'majutsushi/tagbar'
 
 NeoBundle 'scrooloose/syntastic.git'

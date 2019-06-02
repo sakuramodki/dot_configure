@@ -227,6 +227,16 @@ export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 export PATH=$(brew --prefix gnu-sed)/bin:$PATH
 export PATH=~/.pyenv/shims:$PATH
 
+#CUDA
+export CUDA_HOME=/usr/local/cuda
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib"
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+
+#eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 
 #///////////////////////////////////////////////////////////////////////////////////
 # ----------------------------------
